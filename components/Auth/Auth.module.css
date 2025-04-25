@@ -1,0 +1,122 @@
+
+.wrapperDiv {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+}
+
+.card {
+    padding: 1.7em;
+    width: 370px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 0 20px rgba(0,0,0,.08);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin-bottom: 1.6em;
+}
+
+.inputsDiv {
+    margin-bottom: 1em;
+}
+
+.textField {
+	position: relative;
+	border-bottom: 1px solid #adadad;
+	margin-bottom: 1em;
+}
+
+.textField input {
+	width: 100%;
+	padding: 0 0.3em;
+	height: 2.5em;
+	font-size: 1rem;
+	border: none;
+	background: none;
+	outline: none;
+}
+
+.textField label {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 5px;
+	font-size: 1rem;
+	color: #adadad;
+	transition: top 0.5s;
+	pointer-events: none;
+}
+
+.textField span::before {
+	content: '';
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	width: 0%;
+	height: 1px;
+	background: #2691d9;
+	transition: width 0.5s;
+}
+
+.textField input:focus ~ label,
+.textField input:valid ~ label {
+	top: -10px;
+	color: #2691d9;
+}
+
+.textField input:focus ~ span::before,
+.textField input:valid ~ span::before {
+	width: 100%;
+}
+
+.btn {
+    width: 100%;
+    background-color: #2CABE3;
+    color: white;
+    font-size: 1rem;
+    padding: 0.6em 1.3em;
+    margin-bottom: 0.5em;
+}
+
+.switchText {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.link {
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: 1rem;
+	color: #2691d9;
+}
+
+.link:hover,
+.link:focus {
+	text-decoration: underline;
+}
+
+@media (max-width: 490px) {
+    .card {
+        width: 330px;
+        padding: 0.8em;
+    }
+}

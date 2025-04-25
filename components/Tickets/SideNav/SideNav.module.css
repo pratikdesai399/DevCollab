@@ -1,0 +1,101 @@
+.navDiv {
+    width: var(--sideNav-width);
+    background-color: #20222A;
+    padding-top: 1em;
+    position: fixed;
+    top: 7vh;
+    height: 93vh;
+    z-index: 10;
+    transition: width 0.32s ease;
+}
+
+.navItem {
+    padding: 1em;
+    font-size: 1.1em;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.navElement {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.devider {
+    border-top: 1px solid lightgray;
+    margin: 7px 0;
+    opacity: 0.2
+}
+
+.navItem:hover {
+    cursor: pointer;
+    background-color: #1E2027;
+}
+
+.navItem:hover .navIcon,
+.navItem:hover .navText{
+    opacity: 1;
+}
+
+.navIcon {
+    fill: white;
+    opacity: 0.8;
+    margin-right: 0.4em;
+}
+.navText {
+    opacity: 0.8;
+    letter-spacing: 0.3px;
+    position: absolute;
+    left: 35px;
+}
+
+.active {
+    background-color: #FF5050;
+  }
+.active > .navElement > * {
+    opacity: 1;
+  }
+.active:hover{
+    background-color: #FF5050;
+  }
+
+@media (max-width: 1150px) {
+    .navDiv {
+        width: var(--sideNav-width-small);
+    }
+    .navText {
+        display: none;
+    }
+    /* .navElement {
+        justify-content: center;
+    } */
+
+    .navDiv:hover {
+        width: var(--sideNav-width)
+    }
+    .navDiv:hover > ul > li > div > .navText {
+        display: initial;
+    }
+    /* .navDiv:hover > ul > li > .navElement {
+        justify-content: left;
+    } */   
+}
+
+@media (max-width: 490px) {
+    .navDiv {
+        width: var(--sideNav-width-very-small);
+    }
+
+    .navItem {
+        padding: 0.47em;
+    }
+}
+
+@media (min-width: 2500px) {
+    .navDiv {
+        top: 4vh;
+        height: 96vh;
+    }
+}

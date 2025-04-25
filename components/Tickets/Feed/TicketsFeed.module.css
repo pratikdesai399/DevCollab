@@ -1,0 +1,11 @@
+
+.filterBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+
+.previewsDiv {
+    margin-bottom: 5em;
+  }

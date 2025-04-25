@@ -1,0 +1,37 @@
+
+.label {
+    display: block;
+    margin-bottom: 0.2em;
+}
+
+.select {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5em;
+    font-family: inherit;
+    padding: 0.4em 0;
+}
+
+.select:last-of-type {
+    margin-bottom: 1em;
+}
+
+.btn {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.updateBtn {
+    margin-bottom: 3em;
+}
+
+.resolveBtn {
+    background-color: rgba(0,128,0,0.7);
+    margin-bottom: 0.5em;
+}
+
+.deleteBtn {
+    background-color: white;
+    border: 1px solid lightgray;
+    color: black;
+}

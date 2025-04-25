@@ -1,0 +1,61 @@
+.ticketDiv{
+    display: flex;
+}
+
+.leftArea{
+    width: 100%;
+    padding: 2em;
+}
+
+.postDiv {
+    margin-bottom: 2em;
+}
+
+.ticketTitle {
+    margin: 0;
+    margin-bottom: 0.5em;
+    font-size: 1.5rem;
+}
+
+.author {
+    color: #183247;
+    font-weight: 700;
+}
+
+.createdDate {
+    color: #475867;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.message {
+    margin-top: 1.3em;
+    white-space: pre-wrap;
+}
+
+.rightArea{
+    width: 25%;
+    padding: 1em;
+    padding-top: 3em;
+    border-left: 1px solid lightgray;
+    box-shadow: -5px 0 10px rgb(0 0 0 / 3%);
+}
+
+.answerDiv {
+    background-color: #F5F7F9;
+    margin-bottom: 2em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px rgb(0 0 0 / 3%);
+}
+
+@media (max-width: 750px) {
+    .ticketDiv{
+        flex-direction: column;
+    }
+
+    .rightArea{
+        width: 100%;
+        border-top: 1px solid lightgray;
+    }
+}

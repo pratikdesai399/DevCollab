@@ -1,0 +1,69 @@
+.centerContainer {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.responsiveGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 240px);
+    justify-content: center;
+    gap: 2.5em;
+}
+
+.topStatsDiv {
+    margin-bottom: 3em;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    padding: 0.5em 0;
+    color: white;
+    border-radius: 15px;
+    width: 240px;
+}
+.color1 {
+    background-color: #9B9EA3;
+}
+.color2 {
+    background-color: #2CABE3;
+}
+.color3 {
+    background-color: #20C98B;
+}
+.color4 {
+    background-color: #FFC36D;
+}
+
+.chartsTitle {
+    margin-bottom: 1.5em;
+}
+.chartsDiv {
+    margin-bottom: 2em;
+}
+
+.pieDiv {
+    background-color: white;
+    border-radius: 10px;
+    /* margin: 0 1em; */
+    padding: 1em 0;
+}
+
+.pieTitle {
+    text-align: center;
+}
+
+
+@media (max-width: 1430px) {
+    .responsiveGrid {
+        grid-template-columns: repeat(2, 240px);
+    }
+}
+
+@media (max-width: 830px) {
+    .responsiveGrid {
+        grid-template-columns: 240px;
+        gap: 1.5em;
+    }
+}

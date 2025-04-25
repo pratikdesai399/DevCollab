@@ -1,0 +1,21 @@
+
+.historyTableDiv {
+    padding: 2em;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    margin-bottom: 3em;
+}
+
+.historyItemDiv {
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.historyItemTitle {
+    font-weight: bold;
+}
+
+.historyLink {
+    cursor: pointer;
+}

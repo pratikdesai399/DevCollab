@@ -1,0 +1,56 @@
+
+.wrapperDiv {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+}
+
+.card {
+    padding: 1.7em;
+    width: 370px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 0 20px rgba(0,0,0,.08);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoTitle {
+    font-size: 3rem;
+    margin-bottom: 0.75em;
+}
+
+.description {
+    font-size: 1.15rem;
+    line-height: 1.25;
+    margin-bottom: 1.3em;
+}
+
+.btn {
+    width: 100%;
+    font-size: 0.9rem;
+    background-color: #2CABE3;
+    color: white;
+}
+
+.btnDemo {
+    margin-bottom: 0.75em;
+}
+
+.btnAuth {
+    background-color: white;
+    color: #2CABE3;
+    border: 1px solid #2CABE3;
+}
+
+@media (max-width: 490px) {
+    .card {
+        width: 330px;
+        padding: 0.8em;
+    }
+}

@@ -1,0 +1,69 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+
+.pageTitle {
+    margin: 0;
+    margin-bottom: 1em;
+    font-weight: 700;
+    font-size: 1.65rem;
+}
+
+.label {
+    display: block;
+    margin-bottom: 0.2em;
+}
+
+.input,
+.select,
+.textArea {
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.input {
+    margin-bottom: 0.5em;
+    padding: 0.4em 0;
+}
+
+.select {
+    display: block;
+    margin-bottom: 0.5em;
+    padding: 0.4em 0;
+}
+
+.input:focus,
+.select:focus {
+    outline: none;
+}
+
+.textArea {
+    resize: none;
+    height: 300px;
+    margin-bottom: 1.5em;
+}
+
+.textArea:focus {
+    outline: none;
+}
+
+.btn {
+    padding: 0.7em 4em;
+}
+
+@media (max-width: 900px) {
+    .btn {
+        padding: 0.7em 2.5em;
+    }
+  }
+
+@media (max-width: 600px) {
+    .btn {
+        padding: 0.5em 1.1em;
+    }
+  }

@@ -1,0 +1,57 @@
+.togglerDiv{
+    position: relative;
+}
+
+.togglerBtn {
+    width: 100%;
+    padding: 0 0.5em;
+    background-color: inherit;
+    font-size: 1em;
+}
+
+.dropdown{
+    position: absolute;
+    top: 100%;
+    left: -10%;
+    border-radius: 10px;
+    background-color: white;
+    width: 150px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border: 1px solid lightgray;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    position: relative;
+    text-align: center;
+    padding: 0 0.5em;
+    padding-top: 0.5em;
+    cursor: pointer;
+}
+
+.sortText {
+    margin-right: 1.5em;
+}
+
+.active {
+    color: #2c5cc5
+}
+
+.checkmark {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    fill: #2c5cc5;
+}
+
+.item:last-child {
+    padding-bottom: 0.5em
+}
+
+.item:hover{
+    background-color: rgba(0,0,0,0.1);
+}

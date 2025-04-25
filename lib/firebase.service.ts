@@ -31,10 +31,10 @@ import { historyConverter, ticketConverter } from '../utils/firestore-converters
 const firebaseConfig = {
 	apiKey: process.env.NEXT_PUBLIC_FIREBASE_API,
 	authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-	projectId: "project-management-e69cd",
-	storageBucket: "project-management-e69cd.firebasestorage.app",
-	messagingSenderId: "796634323716",
-	appId: "1:796634323716:web:eb0e30208e32a8d48ece51",
+	projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 	measurementId: 'G-24XB66C4ED',
 }
 

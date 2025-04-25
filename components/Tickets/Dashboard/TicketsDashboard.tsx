@@ -46,18 +46,6 @@ const TicketsDashboard: FunctionComponent = () => {
 		{ name: 'High', value: prioHighTicketsCount },
 		{ name: 'Urgent', value: prioUrgentTicketsCount },
 	]
-	const pieData3 = [
-		{ name: 'New Feature', value: newFeatureTicketsCount },
-		{ name: 'Design', value: designTicketsCount },
-		{ name: 'Bug', value: bugTicketsCount },
-		{ name: 'Other', value: typeOtherTicketsCount },
-	]
-	const pieData4 = [
-		{ name: 'Personal Portfolio', value: portfolioTicketsCount },
-		{ name: 'DevCollab', value: ticketTicketsCount },
-		{ name: 'Habits30', value: habitTicketsCount },
-		{ name: 'Other', value: otherTicketsCount },
-	]
 
 	const pieColors = ['#20C98B', '#9B9EA3', '#2CABE3', '#FFC36D']
 
@@ -66,10 +54,12 @@ const TicketsDashboard: FunctionComponent = () => {
 			<div className='top-bar-background'>
 				<div className={styles.centerContainer}>
 					<div className={`top-bar ${styles.responsiveGrid}`}>
-						<h3 className='page-title'>Dashboard</h3>
+						<h3 className='page-title'>Dashboard - Project and Ticket Statistics.</h3>
+						<h3 className='page-title'>Developed and maintained by Pratik Desai - MCS@TAMU</h3>
 					</div>
 				</div>
 			</div>
+
 			<div className={styles.centerContainer}>
 				<div className={`${styles.responsiveGrid} ${styles.topStatsDiv}`}>
 					<div className={`${styles.card} ${styles.color1}`}>
@@ -89,7 +79,8 @@ const TicketsDashboard: FunctionComponent = () => {
 				<div className={`${styles.responsiveGrid} ${styles.chartsTitle}`}>
 					<h3>Tickets by :</h3>
 				</div>
-				<div className={`${styles.responsiveGrid} ${styles.chartsDiv}`}>
+
+				<div className={styles.pieChartsDiv}>
 					<div className={styles.pieDiv}>
 						<h3 className={styles.pieTitle}>Status</h3>
 						<PieChartComponentWithoutSSR data={pieData1} colors={pieColors} />
@@ -97,14 +88,6 @@ const TicketsDashboard: FunctionComponent = () => {
 					<div className={styles.pieDiv}>
 						<h3 className={styles.pieTitle}>Priority</h3>
 						<PieChartComponentWithoutSSR data={pieData2} colors={pieColors} />
-					</div>
-					<div className={styles.pieDiv}>
-						<h3 className={styles.pieTitle}>Type</h3>
-						<PieChartComponentWithoutSSR data={pieData3} colors={pieColors} />
-					</div>
-					<div className={styles.pieDiv}>
-						<h3 className={styles.pieTitle}>Project</h3>
-						<PieChartComponentWithoutSSR data={pieData4} colors={pieColors} />
 					</div>
 				</div>
 			</div>

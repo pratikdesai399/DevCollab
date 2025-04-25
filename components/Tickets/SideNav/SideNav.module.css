@@ -1,20 +1,22 @@
 .navDiv {
     width: var(--sideNav-width);
-    background-color: #20222A;
+    background-color: #000000;  /* Darker shade of blue-gray for a modern look */
     padding-top: 1em;
     position: fixed;
     top: 7vh;
     height: 93vh;
     z-index: 10;
-    transition: width 0.32s ease;
+    transition: width 0.32s ease, background-color 0.3s ease;  /* Smooth transition for background color */
+    border-right: 1px solid #34495E;  /* Added subtle border for separation */
 }
 
 .navItem {
     padding: 1em;
     font-size: 1.1em;
-    color: white;
+    color: #ECF0F1;  /* Light gray color for text */
     text-align: center;
     overflow: hidden;
+    transition: background-color 0.3s ease;  /* Smooth background color change */
 }
 
 .navElement {
@@ -24,26 +26,28 @@
 }
 
 .devider {
-    border-top: 1px solid lightgray;
+    border-top: 1px solid #BDC3C7;  /* Lighter gray for divider */
     margin: 7px 0;
-    opacity: 0.2
+    opacity: 0.2;
 }
 
 .navItem:hover {
     cursor: pointer;
-    background-color: #1E2027;
+    background-color: #34495E;  /* Slightly lighter shade for hover */
 }
 
 .navItem:hover .navIcon,
-.navItem:hover .navText{
+.navItem:hover .navText {
     opacity: 1;
+    transition: opacity 0.3s ease;  /* Smooth transition for icons and text on hover */
 }
 
 .navIcon {
-    fill: white;
+    fill: #ECF0F1;  /* Lighter icon color for visibility */
     opacity: 0.8;
     margin-right: 0.4em;
 }
+
 .navText {
     opacity: 0.8;
     letter-spacing: 0.3px;
@@ -52,14 +56,16 @@
 }
 
 .active {
-    background-color: #FF5050;
-  }
+    background-color: #FF6F61;  /* Softer coral red for active item */
+}
+
 .active > .navElement > * {
     opacity: 1;
-  }
-.active:hover{
-    background-color: #FF5050;
-  }
+}
+
+.active:hover {
+    background-color: #E74C3C;  /* Darker shade of active on hover */
+}
 
 @media (max-width: 1150px) {
     .navDiv {
@@ -68,9 +74,6 @@
     .navText {
         display: none;
     }
-    /* .navElement {
-        justify-content: center;
-    } */
 
     .navDiv:hover {
         width: var(--sideNav-width)
@@ -78,9 +81,6 @@
     .navDiv:hover > ul > li > div > .navText {
         display: initial;
     }
-    /* .navDiv:hover > ul > li > .navElement {
-        justify-content: left;
-    } */   
 }
 
 @media (max-width: 490px) {

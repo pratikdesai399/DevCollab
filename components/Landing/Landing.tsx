@@ -27,6 +27,8 @@ const Landing: FunctionComponent = () => {
             <div className={styles.card}>
                 <h1 className={styles.logoTitle}>DevCollab</h1>
                 <p className={styles.description}>DevCollab is a project managing web application.</p>
+                <p className={styles.description}>Pratik Desai (MCS @TAMU)</p>
+
                 <button className={`btn ${styles.btn} ${styles.btnDemo}`} onClick={loginDemo}>{isLoggingIn ? 'Logging In..' : 'Try as Demo User'}</button>
                 <Link href='/auth'>
                     <button className={`btn ${styles.btn} ${styles.btnAuth}`}>Login / Signup</button>

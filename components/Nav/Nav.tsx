@@ -17,7 +17,6 @@ export default function Nav() {
 		<div className={styles.nav}>
 			<div className={styles.logoDiv}>
 				<h3 className={styles.expendedTitle}>DevCollab</h3>
-				<h3 className={styles.contractedTitle}></h3>
 			</div>
 			<ul className={styles.linkList}>
 				{!user.id && (

@@ -36,7 +36,7 @@ export enum Type {
 export enum Project {
 	Portfolio = 'Personal Portfolio',
 	Tickets = 'DevCollab',
-	Habits = 'Habits30',
+	Habits = 'Sample',
 	Other = 'Other'
 }
 
